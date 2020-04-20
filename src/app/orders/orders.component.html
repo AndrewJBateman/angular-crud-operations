@@ -1,0 +1,39 @@
+<h5>Fastfood Till:</h5>
+<form [formGroup]="this.ordersService.form">
+  <input
+    placeholder="Customer Name"
+    formControlName="customerName"
+    type="text"
+    class="input-field col s12"
+  />
+
+  <input
+    class="input-field col s12"
+    placeholder="Order Number"
+    formControlName="orderNumber"
+    type="number"
+    name="orderNumber"
+  />
+
+  <button
+    class="waves-effect waves-light btn col s4 indigo darken-4"
+    *ngFor="let item of items"
+    (click)="addItem(item)"
+  >
+    {{ item }}
+  </button>
+
+  <ul class="collection">
+    <li *ngFor="let item of order">
+      <span class="col s11"> {{ item }} </span
+      ><a class="col s1" (click)="removeItem(item)">x</a>
+    </li>
+  </ul>
+
+  <button
+    class="waves-effect waves-light btn col s4 green accent-4"
+    (click)="onSubmit()"
+  >
+    Submit<i class="material-icons right">send</i>
+  </button>
+</form>

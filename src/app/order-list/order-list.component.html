@@ -1,0 +1,35 @@
+<table>
+  <thead>
+    <tr>
+      <th>Order No.</th>
+      <th>Name</th>
+      <th>Items</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>
+        {{ order.payload.doc.data().orderNumber }}
+      </td>
+      <td>{{ order.payload.doc.data().customerName }}</td>
+      <td>
+        <span *ngFor="let item of order.payload.doc.data().order">
+          {{ item }}
+        </span>
+      </td>
+      <td
+        [hidden]="order.payload.doc.data().completed"
+        (click)="markCompleted(order)"
+      >
+        <i class="material-icons">check</i>
+      </td>
+      <td
+        [hidden]="order.payload.doc.data().completed"
+        (click)="deleteOrder(order)"
+      >
+        <i class="material-icons">delete_forever</i>
+      </td>
+    </tr>
+  </tbody>
+</table>
