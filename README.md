@@ -1,27 +1,51 @@
-# AngularFirebaseCrud
+# :zap: Angular Firebase CRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+* Angular 9 with Firebase to store fast-food orders in a Firebase database. They are then retrieved and shown in a table on-screen
 
-## Development server
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :books: General info
 
-## Code scaffolding
+* Firebase backend stores customer name and number and what they ordered.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :camera: Screenshots
 
-## Build
+* ![Example screenshot](./img/checkout.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## :signal_strength: Technologies
 
-## Running unit tests
+* [Angular v9](https://angular.io/) javascript framework
+* [Angular Material v9](https://material.angular.io/) component library
+* [Angular Material Icons](https://material.io/resources/icons/?style=baseline)
+* [Materialize v1](https://materializecss.com/) front-end framework based on Material Design
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :floppy_disk: Setup
 
-## Running end-to-end tests
+* Install dependencies using `npm i`
+* Run `ng serve` to get a server at `http://localhost:4200/`
+* If required, run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## :computer: Code Examples
 
-## Further help
+* f
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```typescript
+
+```
+
+## :cool: Features
+
+* f
+
+## :clipboard: Status & To-Do List
+
+* Status: working - needs improving
+* To-Do:  Improve
+
+## :clap: Inspiration
+
+* [Codesourse: Server-side rendering (SSR) in Angular](https://codesource.io/server-side-rendering-in-angular/)
+
+## :envelope: Contact
+
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
