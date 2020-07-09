@@ -3,7 +3,7 @@ import { FormControl, FormGroup } from "@angular/forms";
 import { AngularFirestore } from "@angular/fire/firestore";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class OrdersService {
   constructor(private firestore: AngularFirestore) {}
@@ -12,7 +12,7 @@ export class OrdersService {
     customerName: new FormControl(""),
     orderNumber: new FormControl(""),
     order: new FormControl(""),
-    completed: new FormControl(false)
+    completed: new FormControl(false),
   });
 
   createOrder(data: string) {
@@ -20,7 +20,10 @@ export class OrdersService {
       this.firestore
         .collection("orders")
         .add(data)
-        .then(res => {}, err => reject(err));
+        .then(
+          (res) => {},
+          (err) => reject(err)
+        );
     });
   }
 

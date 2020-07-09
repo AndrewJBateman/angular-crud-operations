@@ -5,14 +5,7 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyCegDXQpvpcdZLnzw2Ljgunoaell4yrbds",
-    authDomain: "angular-firebase-crud-4608e.firebaseapp.com",
-    databaseURL: "https://angular-firebase-crud-4608e.firebaseio.com",
-    projectId: "angular-firebase-crud-4608e",
-    storageBucket: "angular-firebase-crud-4608e.appspot.com",
-    messagingSenderId: "985381689619",
-    appId: "1:985381689619:web:77a227d950b922285d22e6",
-    measurementId: "G-9C2LSEEQLH"
+
   }
 };
 

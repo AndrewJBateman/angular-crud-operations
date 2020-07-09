@@ -1,6 +1,6 @@
 # :zap: Angular Firebase CRUD
 
-* Angular 9 with Firebase to store fast-food orders in a Firebase database. They are then retrieved and shown in a table on-screen
+* Angular 10 app to store fast-food orders in a Firebase database. They are then retrieved and shown in a table on-screen
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -14,8 +14,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v9](https://angular.io/) javascript framework
-* [Angular Material v9](https://material.angular.io/) component library
+* [Angular v10](https://angular.io/) javascript framework
+* [Angular Material v10](https://material.angular.io/) component library
 * [Angular Material Icons](https://material.io/resources/icons/?style=baseline)
 * [Materialize v1](https://materializecss.com/) front-end framework based on Material Design
 
@@ -27,20 +27,28 @@
 
 ## :computer: Code Examples
 
-* f
+* onSubmit function to get order data from form to createOrder function
 
 ```typescript
+onSubmit() {
+    this.ordersService.form.value.order = this.order;
+    let data = this.ordersService.form.value;
+    console.log('data: ', data); // {CustomerName: Wes, orderNumber: 4, order: ["burger", "eggs"]}
 
+    this.ordersService.createOrder(data).then((res) => {
+      console.log("fast food order created");
+    });
+  }
 ```
 
 ## :cool: Features
 
-* f
+* working backend Database storage of customer orders
 
 ## :clipboard: Status & To-Do List
 
-* Status: working - needs improving
-* To-Do:  Improve
+* Status: working
+* To-Do:  Improve: add quantity of items, change database to postgres or other
 
 ## :clap: Inspiration
 
