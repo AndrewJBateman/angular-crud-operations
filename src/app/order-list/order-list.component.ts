@@ -22,5 +22,4 @@ export class OrderListComponent implements OnInit {
   markCompleted = (data) => this.ordersService.updateOrder(data);
 
   deleteOrder = (data) => this.ordersService.deleteOrder(data);
-
 }

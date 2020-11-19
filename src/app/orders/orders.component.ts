@@ -39,7 +39,7 @@ export class OrdersComponent implements OnInit {
   onSubmit() {
     this.ordersService.form.value.order = this.order;
     let data = this.ordersService.form.value;
-    console.log('data: ', data); // {CustomerName: Wes, orderNumber: 4, order: ["burger", "eggs"]}
+    console.log("data: ", data); // {CustomerName: Wes, orderNumber: 4, order: ["burger", "eggs"]}
 
     this.ordersService.createOrder(data).then((res) => {
       console.log("fast food order created");
