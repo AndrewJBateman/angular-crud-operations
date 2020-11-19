@@ -48,11 +48,11 @@ onSubmit() {
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do:  Improve: add quantity of items, change database to postgres or other
+* To-Do:  Improve: add quantity of items
 
 ## :clap: Inspiration
 
-* [Codesourse: Server-side rendering (SSR) in Angular](https://codesource.io/server-side-rendering-in-angular/)
+* [Dayana Jabif of Angular Templates: Angular CRUD with Firebase](https://angular-templates.io/tutorials/about/angular-crud-with-firebase)
 
 ## :envelope: Contact
 
