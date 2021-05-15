@@ -1,8 +1,12 @@
 # :zap: Angular Firebase CRUD
 
 * Angular 11 app to store fast-food orders in a Firebase database. They are then retrieved and shown in a table on-screen
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-crud-operations?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-crud-operations?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-crud-operations?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-crud-operations?style=plastic)
 
 ## :books: General info
 
@@ -54,6 +58,10 @@ onSubmit() {
 
 * [Dayana Jabif of Angular Templates: Angular CRUD with Firebase](https://angular-templates.io/tutorials/about/angular-crud-with-firebase)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
