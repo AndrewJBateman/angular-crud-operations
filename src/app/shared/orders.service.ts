@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { FormControl, FormGroup } from "@angular/forms";
 import { AngularFirestore } from "@angular/fire/firestore";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root",
@@ -15,7 +16,7 @@ export class OrdersService {
     completed: new FormControl(false),
   });
 
-  createOrder(data: string) {
+  createOrder(data: string): Promise<any> {
     return new Promise<any>((resolve, reject) => {
       this.firestore
         .collection("orders")
@@ -27,18 +28,18 @@ export class OrdersService {
     });
   }
 
-  updateOrder(data: any) {
+  updateOrder(data: any): void {
     this.firestore
       .collection("orders")
       .doc(data.payload.doc.id)
       .set({ completed: true }, { merge: true });
   }
 
-  getOrders() {
+  getOrders(): Observable<any> {
     return this.firestore.collection("orders").snapshotChanges();
   }
 
-  deleteOrder(data: any) {
+  deleteOrder(data: any): any {
     return this.firestore
       .collection("orders")
       .doc(data.payload.doc.id)

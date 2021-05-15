@@ -1,6 +1,6 @@
 # :zap: Angular Firebase CRUD
 
-* Angular 11 app to store fast-food orders in a Firebase database. They are then retrieved and shown in a table on-screen
+* Angular app to store fast-food orders in a Firebase database. They are then retrieved and shown in a table on-screen
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-crud-operations?style=plastic)
@@ -18,8 +18,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v11](https://angular.io/) javascript framework
-* [Angular Material v11](https://material.angular.io/) component library
+* [Angular v12](https://angular.io/) javascript framework
 * [Angular Material Icons](https://material.io/resources/icons/?style=baseline)
 * [Materialize v1](https://materializecss.com/) front-end framework based on Material Design
 

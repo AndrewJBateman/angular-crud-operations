@@ -29,14 +29,14 @@ export class OrdersComponent implements OnInit {
 
   order = [];
 
-  addItem = (item) => this.order.push(item);
+  addItem = (item: string) => this.order.push(item);
 
-  removeItem = (item) => {
+  removeItem = (item: string) => {
     let index = this.order.indexOf(item);
     if (index > -1) this.order.splice(index, 1);
   };
 
-  onSubmit() {
+  onSubmit(): void {
     this.ordersService.form.value.order = this.order;
     let data = this.ordersService.form.value;
     console.log("data: ", data); // {CustomerName: Wes, orderNumber: 4, order: ["burger", "eggs"]}
