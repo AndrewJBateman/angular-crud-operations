@@ -12,8 +12,8 @@ import { OrderListComponent } from './order-list/order-list.component';
 
 import { OrdersService } from "./shared/orders.service";
 
-import { AngularFireModule } from "@angular/fire";
-import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 
 @NgModule({
   declarations: [
