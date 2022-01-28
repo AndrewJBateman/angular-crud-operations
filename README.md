@@ -18,13 +18,16 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/) javascript framework
+* [Angular v13](https://angular.io/) javascript framework
 * [Angular Material Icons](https://material.io/resources/icons/?style=baseline)
 * [Materialize v1](https://materializecss.com/) front-end framework based on Material Design
+* [firebase v9](https://firebase.google.com/)
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
+* Add firebase credentials to `environment.ts` files
+* Make sure [Firestore Database rules](https://firebase.google.com/docs/firestore/security/get-started) will allow user access
 * Run `ng serve` to get a server at `http://localhost:4200/`
 * If required, run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
@@ -36,7 +39,7 @@
 onSubmit() {
     this.ordersService.form.value.order = this.order;
     let data = this.ordersService.form.value;
-    console.log('data: ', data); // {CustomerName: Edwward, orderNumber: 3, order: ["burger", "fries"]}
+    console.log('data: ', data); // {CustomerName: Edward, orderNumber: 3, order: ["burger", "fries"]}
 
     this.ordersService.createOrder(data).then((res) => {
       console.log("fast food order created");
@@ -51,7 +54,7 @@ onSubmit() {
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do:  Improve: add quantity of items
+* To-Do:  Improve: add quantity of items, clear form after use
 
 ## :clap: Inspiration
 
