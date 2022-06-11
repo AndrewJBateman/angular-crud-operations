@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { FormControl, FormGroup } from "@angular/forms";
+import { UntypedFormControl, UntypedFormGroup } from "@angular/forms";
 import { AngularFirestore } from "@angular/fire/compat/firestore";
 import { Observable } from "rxjs";
 
@@ -9,11 +9,11 @@ import { Observable } from "rxjs";
 export class OrdersService {
   constructor(private firestore: AngularFirestore) {}
 
-  form = new FormGroup({
-    customerName: new FormControl(""),
-    orderNumber: new FormControl(""),
-    order: new FormControl(""),
-    completed: new FormControl(false),
+  form = new UntypedFormGroup({
+    customerName: new UntypedFormControl(""),
+    orderNumber: new UntypedFormControl(""),
+    order: new UntypedFormControl(""),
+    completed: new UntypedFormControl(false),
   });
 
   createOrder(data: string): Promise<any> {
