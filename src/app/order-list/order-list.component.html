@@ -8,7 +8,7 @@
   </thead>
 
   <tbody>
-    <tr *ngFor="let order of orders">
+    <tr *ngFor="let order of orders$ | async; trackBy: trackByFntn">
       <td>
         {{ order.payload.doc.data().orderNumber }}
       </td>
