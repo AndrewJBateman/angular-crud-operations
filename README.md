@@ -18,7 +18,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/) javascript framework
+* [Angular v14](https://angular.io/) javascript framework
 * [Angular Material Icons](https://material.io/resources/icons/?style=baseline)
 * [Materialize v1](https://materializecss.com/) front-end framework based on Material Design
 * [firebase v9](https://firebase.google.com/)
