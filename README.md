@@ -18,10 +18,10 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v15](https://angular.io/) javascript framework
+* [Angular v16](https://angular.io/) javascript framework
 * [Angular Material Icons](https://material.io/resources/icons/?style=baseline)
 * [Materialize v1](https://materializecss.com/) front-end framework based on Material Design
-* [firebase v9](https://firebase.google.com/)
+* [firebase v10](https://firebase.google.com/)
 
 ## :floppy_disk: Setup
 
@@ -29,7 +29,7 @@
 * Add firebase credentials to `environment.ts` files
 * Make sure [Firestore Database rules](https://firebase.google.com/docs/firestore/security/get-started) will allow user access
 * Run `ng serve` to get a server at `http://localhost:4200/`
-* If required, run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* If required, run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## :computer: Code Examples
 
@@ -66,4 +66,4 @@ onSubmit() {
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@gmail.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@gmail.com`
