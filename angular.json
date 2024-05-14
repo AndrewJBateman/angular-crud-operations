@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-firebase-crud:build"
+            "buildTarget": "angular-firebase-crud:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-firebase-crud:build:production"
+              "buildTarget": "angular-firebase-crud:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-firebase-crud:build"
+            "buildTarget": "angular-firebase-crud:build"
           }
         },
         "test": {
